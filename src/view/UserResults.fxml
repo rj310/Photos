@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="651.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.UserResultsController">
+   <children>
+      <Button fx:id="addbutton" layoutX="32.0" layoutY="261.0" mnemonicParsing="false" text="Add Photo" />
+      <Button fx:id="captionbutton" layoutX="458.0" layoutY="322.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="137.0" text="Caption/Recaption" />
+      <Pane fx:id="bigimagePane" layoutX="437.0" prefHeight="214.0" prefWidth="214.0" />
+      <Button fx:id="addtagsbutton" layoutX="199.0" layoutY="382.0" mnemonicParsing="false" text="Add Tags" />
+      <Button fx:id="removetagsbutton" layoutX="334.0" layoutY="382.0" mnemonicParsing="false" text="Remove Tags" />
+      <ScrollPane fx:id="scrollpane" layoutX="7.0" layoutY="7.0" prefHeight="214.0" prefWidth="405.0">
+         <content>
+            <TilePane fx:id="resultPane" prefColumns="2" prefHeight="215.0" prefRows="0" prefTileHeight="100.0" prefTileWidth="100.0" prefWidth="407.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="logbutton" layoutX="35.0" layoutY="368.0" mnemonicParsing="false" text="Log Out" />
+      <Button fx:id="quitbutton" layoutX="46.0" layoutY="402.0" mnemonicParsing="false" text="Quit" />
+      <Button fx:id="backbutton" layoutX="43.0" layoutY="333.0" mnemonicParsing="false" text="Back" />
+      <TextField fx:id="newcapfield" layoutX="446.0" layoutY="352.0" promptText="Enter New Caption" />
+      <Label fx:id="bigcaption" layoutX="512.0" layoutY="231.0" />
+      <ListView fx:id="taglistview" layoutX="427.0" layoutY="380.0" prefHeight="125.0" prefWidth="200.0" />
+      <TextField fx:id="newtagfield" layoutX="219.0" layoutY="515.0" prefHeight="25.0" prefWidth="200.0" promptText="type:value" />
+      <ComboBox fx:id="tagdropbox" layoutX="199.0" layoutY="415.0" prefHeight="25.0" prefWidth="117.0" promptText="Tag Types" />
+      <TextField fx:id="qualifiednewtagfield" layoutX="336.0" layoutY="415.0" prefHeight="25.0" prefWidth="76.0" promptText="Enter Tag Value" />
+      <Button fx:id="slidebutton" layoutX="26.0" layoutY="297.0" mnemonicParsing="false" text="Slide Show" />
+      <Label fx:id="timelabel" layoutX="512.0" layoutY="278.0" />
+      <ComboBox fx:id="albumselectbox" layoutX="251.0" layoutY="297.0" prefWidth="150.0" promptText="Select Album" />
+      <Text layoutX="251.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move/Copy Photo to Album" />
+      <Button fx:id="movebutton" layoutX="257.0" layoutY="323.0" mnemonicParsing="false" text="Move" />
+      <Button fx:id="copybutton" layoutX="326.0" layoutY="323.0" mnemonicParsing="false" text="Copy" />
+      <Text layoutX="319.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER" wrappingWidth="14.79296875" />
+      <Text layoutX="242.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter new tag like type:value" textAlignment="CENTER" />
+      <Text layoutX="313.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="OR" />
+      <Text layoutX="35.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double click to delete photo, single click to display" />
+   </children>
+</AnchorPane>

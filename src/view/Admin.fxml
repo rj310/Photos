@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AdminController">
+   <children>
+      <ListView fx:id="userlistview" layoutX="43.0" layoutY="60.0" prefHeight="272.0" prefWidth="200.0" />
+      <Text layoutX="122.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Users" textAlignment="CENTER" />
+      <Button fx:id="createButton" layoutX="366.0" layoutY="92.0" mnemonicParsing="false" text="Create User" />
+      <Button fx:id="deleteButton" layoutX="367.0" layoutY="236.0" mnemonicParsing="false" text="Delete User" />
+      <TextField fx:id="newuserfield" alignment="CENTER" layoutX="327.0" layoutY="127.0" promptText="Enter New Username" />
+      <Button fx:id="createsubmit" layoutX="380.0" layoutY="161.0" mnemonicParsing="false" text="Submit" />
+      <Button fx:id="deletesubmit" layoutX="381.0" layoutY="200.0" mnemonicParsing="false" text="Submit" textAlignment="CENTER" />
+      <Button fx:id="logbutton" layoutX="346.0" layoutY="307.0" mnemonicParsing="false" text="Log Out" textAlignment="CENTER" />
+      <Button fx:id="quitbutton" layoutX="421.0" layoutY="307.0" mnemonicParsing="false" text="Quit" />
+   </children>
+</AnchorPane>
